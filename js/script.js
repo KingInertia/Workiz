@@ -1,4 +1,4 @@
-const url = `https://api.pipedrive.com/v1/deals?api_token=e260223c7d0104b74309545c8337e865715e8de5`;
+const url = `https://api.pipedrive.com/v1/deals?api_token=d28c08e2567d20e4fd7f6f6d5cb83653841e79c2`;
 
 
 document.addEventListener('DOMContentLoaded', () => {
