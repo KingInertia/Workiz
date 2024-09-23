@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal</title>
     <link href="css/styles.css" rel="stylesheet">
-
 </head>
 <body>
     <iframe src="https://kinginertia.github.io/Workiz/model.html" ></iframe>
+
+    <script>
+        window.onload = function () {
+            const authCode = localStorage.getItem('authCode');
+            
+            if (authCode) {
+                console.log("Authorization Code from localStorage: ", authCode);
+                // Выполняем действия с кодом авторизации
+                
+                // Очистка localStorage
+                localStorage.removeItem('authCode');
+            } else {
+                console.log("No authorization code found in localStorage.");
+            }
+        };
+    </script>
 </body>
 </html>
-
-
