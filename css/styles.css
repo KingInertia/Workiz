@@ -1,12 +1,5 @@
 .content {
-  padding: 0%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 60%; 
-  height: 100%; 
-  transform: translate(-50%, -50%);
+   
     
   }
   .card-container{
@@ -33,7 +26,14 @@
 }
 
 iframe {
-
+  padding: 0%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%; 
+  height: 100%; 
+  transform: translate(-50%, -50%);
 }
 
 .card-body {

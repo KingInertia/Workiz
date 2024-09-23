@@ -1,148 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workiz</title>
+    <title>Modal</title>
     <link href="css/styles.css" rel="stylesheet">
-   
+
 </head>
 <body>
-    
-
-    <div class="content">
-        <header class="header background-color rgb(228, 228, 228)
-        padding: 10px" >
-            <h1 style="margin: 0; font-size: 1rem">NEW Create a job</h1>
-        </header> 
-        <div class="card-container">
-
-            <div class="card">
-
-                <h2>Client details</h2>
-
-                    <div class="card-body">
-
-                        <input class="text-field half-width"  type="text"  id="name" name="name" placeholder="Name">
-                        <input class="text-field half-width"  type="text" id="last-name" name="last-name" placeholder="Last name">
-                        <input class="text-field" type="text"  id="phone" name="phone" placeholder="Phone">
-                        <input class="text-field" type="text" id="email" name="email" placeholder="Email (optional)">
-                    </div>
-
-            </div>
-            <div class="card">
-                <h2>Job type</h2>
-
-                <div class="card-body">
-
-                    <select id="job-type" name="job-type" class="text-field dropdown" placeholder="Job Type">
-                        <option value="">Select Job Type</option>
-                        <option value="full-time">Recall Job</option>
-                        <option value="part-time">Review  Job</option>
-                        <option value="contract">Feedback Job</option>               
-                      </select>
-                      <select id="job-source" name="job-source" class="text-field dropdown" placeholder="Job Source">                      
-                        <option value="website">Company Website</option>
-                        <option value="referral">Referral</option>
-                        <option value="job-board">Job Board</option>
-                        <option value="social-media">Social Media</option>
-                    </select>
-                    <textarea id="job-description" name="job-description" class="text-field" placeholder="Job Description (optional)" rows="4"></textarea>
-                </div>
-            </div>
-            <div class="card">
-                <h2>Service location</h2>
-                
-                <div class="card-body">
-
-                    <input class="text-field" type="text"  id="address" name="address" placeholder="Address">
-                    <input class="text-field" type="text"  id="city" name="city" placeholder="City">
-                    <input class="text-field" type="state" id="state" name="state" placeholder="State">
-                    
-                    <input class="text-field half-width"  type="text"  id="zip-code" name="zip-code" placeholder="Zip code">
-                    <select id="service-area" name="service-area" class="text-field dropdown-2" placeholder="Area">
-                        <option value="tampa">Tampa</option>
-                        <option value="st-petersburg">St. Petersburg</option>
-                        <option value="clearwater">Clearwater</option>
-                        <option value="brandon">Brandon</option>
-                        <option value="sarasota">Sarasota</option>
-                        <option value="valrico">Valrico</option>
-                    </select>
-                    
-                </div>
-            </div>
-            <div class="card">
-                <h2>Scheduled</h2>
-                
-                <div class="card-body">
-
-                    <input type="date" id="scheduled-date" class="text-field" name="scheduled-date" class="text-field" >
-                    <select id="start-time" name="start-time" class="text-field dropdown-2">   
-                        <option value="08:00">08:00</option>
-                        <option value="09:00">09:00</option>
-                        <option value="10:00">10:00</option>
-                        <option value="11:00">11:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="13:00">13:00</option>
-                        <option value="14:00">14:00</option>
-                        <option value="15:00">15:00</option>
-                        <option value="16:00">16:00</option>
-                        <option value="17:00">17:00</option>
-                        <option value="18:00">18:00</option>
-                        <option value="19:00">19:00</option>
-                        <option value="20:00">20:00</option>
-                        <option value="21:00">21:00</option>
-                        <option value="22:00">22:00</option>
-                        <option value="23:00">23:00</option>                   
-                    </select>
-                    <select id="end-time" name="end-time" class="text-field dropdown-2">                          
-                        
-                        <option value="09:00">09:00</option>
-                        <option value="10:00">10:00</option>
-                        <option value="11:00">11:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="13:00">13:00</option>
-                        <option value="14:00">14:00</option>
-                        <option value="15:00">15:00</option>
-                        <option value="16:00">16:00</option>
-                        <option value="17:00">17:00</option>
-                        <option value="18:00">18:00</option>
-                        <option value="19:00">19:00</option>
-                        <option value="20:00">20:00</option>
-                        <option value="21:00">21:00</option>
-                        <option value="22:00">22:00</option>
-                        <option value="23:00">23:00</option>                   
-                    </select>
-                    
-                    <select id="technician" name="technician" class="text-field dropdown">
-                        <option value="">Select Technician</option>
-                        <option value="john_smith">John Smith</option>
-                        <option value="sarah_johnson">Sarah Johnson</option>
-                        <option value="michael_brown">Michael Brown</option>
-                        <option value="emily_davis">Emily Davis</option>
-                        <option value="david_wilson">David Wilson</option>
-                        <option value="jessica_taylor">Jessica Taylor</option>
-                        <option value="daniel_anderson">Daniel Anderson</option>
-                        <option value="ashley_thomas">Ashley Thomas</option>
-                        <option value="matthew_jackson">Matthew Jackson</option>
-                        <option value="olivia_white">Olivia White</option>
-                    </select>
-                    
-                   
-                </div>
-            </div>
-        </div>
-       
-        <div class="button-container">
-            <button id="button-create-job" class="button-create-job">Create Job</button>
-            <button id = "button-save-info" class="button-save-info">Save Info</button>
-        </div>
-        <div id="error-message" style="display: none; color: red;">
-            Check the correctness of the data input.
-        </div>
-    </div>
-    <script src="js/script.js"></script>
+    <iframe src="https://kinginertia.github.io/Workiz/model.html" ></iframe>
 </body>
 </html>
+
 
